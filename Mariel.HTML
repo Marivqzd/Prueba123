@@ -23,7 +23,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const csvData = `Nombre completo,Edad,Sexo,Ocupación,Nivel de estudios\nMariela Vazquez,23,Femenino,Ingeniero,Licenciatura\nMaría Gómez,30,Femenino,Doctora,Maestría\nCarlos Ruiz,40,Masculino,Profesor,Doctorado\nAna Torres,28,Femenino,Diseñadora,Licenciatura\nLuis Fernández,35,Masculino,Abogado,Maestría`;
+            const csvData = `Nombre completo,Edad,Sexo,Ocupación,Nivel de estudios\nMariela Vazquez,23,Femenino,Ingeniero,Licenciatura\nMaría Gómez,30,Femenino,Doctora,Maestría\nCarlos Ruiz,40,Masculino,Profesor,Doctorado\nAna Torres,28,Femenino,Diseñadora,Licenciatura\nLuis Fernández,35,Masculino,Abogado,Maestría\nManuel Castillo,23,Masculino,Ingeniero,Maestría\nDelfino Vazquez,35,Masculino,Abogado,Maestría\nDiego Fernández,35,Masculino,Abogado,Maestría`;
 
             const rows = csvData.split("\n").slice(1);
             const people = rows.map(row => {

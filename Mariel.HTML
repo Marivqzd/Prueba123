@@ -80,7 +80,7 @@ Leonardo Soto,41,Masculino,Ingeniero Mecánico,Maestría`;
             function renderList(filter = "") {
                 namesList.innerHTML = "";
                 const filteredPeople = people.filter(p => p.name.toLowerCase().includes(filter.toLowerCase()));
-                filteredPeople.slice(0, 50).forEach(person => {
+                filteredPeople.slice(0, 51).forEach(person => {
                     const col = document.createElement("div");
                     col.classList.add("col-md-6", "mb-2");
                     col.innerHTML = `<button class="btn btn-primary w-100" data-name="${person.name}">${person.name}</button>`;

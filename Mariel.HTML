@@ -23,7 +23,48 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const csvData = `Nombre completo,Edad,Sexo,Ocupación,Nivel de estudios\nMariela Vazquez,23,Femenino,Ingeniero,Licenciatura\nMaría Gómez,30,Femenino,Doctora,Maestría\nCarlos Ruiz,40,Masculino,Profesor,Doctorado\nAna Torres,28,Femenino,Diseñadora,Licenciatura\nLuis Fernández,35,Masculino,Abogado,Maestría\nManuel Castillo,23,Masculino,Ingeniero,Maestría\nDelfino Vazquez,35,Masculino,Abogado,Maestría\nDiego Fernández,35,Masculino,Abogado,Maestría`;
+            const csvData = `Nombre completo,Edad,Sexo,Ocupación,Nivel de estudios\nMariela Vazquez,23,Femenino,Ingeniero,Licenciatura\nMaría Gómez,30,Femenino,Doctora,Maestría\nCarlos Ruiz,40,Masculino,Profesor,Doctorado\nAna Torres,28,Femenino,Diseñadora,Licenciatura\nLuis Fernández,35,Masculino,Abogado,Maestría\nManuel Castillo,23,Masculino,Ingeniero,Maestría\nDelfino Vazquez,35,Masculino,Abogado,Maestría\nDiego Fernández,35,Masculino,Abogado,Maestría Luis Hernández,28,Masculino,Programador,Licenciatura
+Gabriela Ortiz,26,Femenino,Biólogo,Doctorado
+Daniela Fernández,24,Femenino,Enfermero,Licenciatura
+Pablo Silva,33,Masculino,Mecánico,Técnico
+Martín Pérez,37,Masculino,Carpintero,Técnico
+Liliana Sánchez,25,Femenino,Químico,Maestría
+Francisco Ortega,29,Masculino,Electricista,Técnico
+Claudia Morales,32,Femenino,Periodista,Licenciatura
+Iván Navarro,27,Masculino,Chef,Técnico
+Carmen Aguilar,34,Femenino,Nutriólogo,Maestría
+Roberto Castillo,41,Masculino,Policía,Técnico
+Alejandra Rojas,23,Femenino,Matemático,Doctorado
+Javier Díaz,36,Masculino,Físico,Doctorado
+Esteban Jiménez,39,Masculino,Músico,Licenciatura
+Monserrat Vega,28,Femenino,Sociólogo,Maestría
+Enrique Salazar,45,Masculino,Piloto,Técnico
+Patricia Flores,31,Femenino,Antropólogo,Licenciatura
+Eduardo Mendoza,33,Masculino,Economista,Maestría
+Lucía Herrera,27,Femenino,Actor,Licenciatura
+Samuel Vargas,30,Masculino,Geólogo,Doctorado
+Regina Paredes,26,Femenino,Fotógrafo,Técnico
+Guillermo Orozco,29,Masculino,Historiador,Maestría
+Miriam Bautista,35,Femenino,Trabajador Social,Licenciatura
+Hugo Reyes,38,Masculino,Ingeniero Civil,Maestría
+Rocío Ramos,24,Femenino,Artista,Técnico
+Antonio Farías,40,Masculino,Profesor,Doctorado
+Elena Villanueva,27,Femenino,Investigador,Doctorado
+David Suárez,32,Masculino,Ingeniero de Software,Licenciatura
+Verónica Meza,29,Femenino,Escritor,Maestría
+Andrés Correa,31,Masculino,Filósofo,Doctorado
+Natalia Estrada,28,Femenino,Traductor,Licenciatura
+Oscar Serrano,33,Masculino,Científico,Doctorado
+Julieta Padilla,30,Femenino,Diseñador de Moda,Licenciatura
+Benjamín Vázquez,29,Masculino,Ingeniero Electrónico,Maestría
+Silvia Lozano,36,Femenino,Arquitecto,Doctorado
+Tomás Rangel,25,Masculino,Animador Digital,Técnico
+Rosa Del Valle,31,Femenino,Psicoterapeuta,Maestría
+Cristian León,34,Masculino,Abogado,Doctorado
+Ana Beltrán,26,Femenino,Biólogo Marino,Licenciatura
+Matías Gutiérrez,37,Masculino,Empresario,Maestría
+Fabiola Espinoza,28,Femenino,Publicista,Licenciatura
+Leonardo Soto,41,Masculino,Ingeniero Mecánico,Maestría`;
 
             const rows = csvData.split("\n").slice(1);
             const people = rows.map(row => {

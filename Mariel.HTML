@@ -23,7 +23,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const csvData = `Nombre completo,Edad,Sexo,Ocupación,Nivel de estudios\nMariela Vazquez,23,Femenino,Ingeniero,Licenciatura\nMaría Gómez,30,Femenino,Doctora,Maestría\nCarlos Ruiz,40,Masculino,Profesor,Doctorado\nAna Torres,28,Femenino,Diseñadora,Licenciatura\nLuis Fernández,35,Masculino,Abogado,Maestría\nManuel Castillo,23,Masculino,Ingeniero,Maestría\nDelfino Vazquez,35,Masculino,Abogado,Maestría\nDiego Fernández,35,Masculino,Abogado,Maestría Luis Hernández,28,Masculino,Programador,Licenciatura
+            const csvData = `Nombre completo,Edad,Sexo,Ocupación,Nivel de estudios\nMariela Vazquez,23,Femenino,Ingeniero,Licenciatura\nMaría Gómez,30,Femenino,Doctora,Maestría\nCarlos Ruiz,40,Masculino,Profesor,Doctorado\nValeria Castro,22,Femenino,Diseñador,Licenciatura\nAna Torres,28,Femenino,Diseñadora,Licenciatura\nLuis Fernández,35,Masculino,Abogado,Maestría\nManuel Castillo,23,Masculino,Ingeniero,Maestría\nDelfino Vazquez,35,Masculino,Abogado,Maestría\nDiego Fernández,35,Masculino,Abogado,Maestría Luis Hernández,28,Masculino,Programador,Licenciatura
 Gabriela Ortiz,26,Femenino,Biólogo,Doctorado
 Daniela Fernández,24,Femenino,Enfermero,Licenciatura
 Pablo Silva,33,Masculino,Mecánico,Técnico
@@ -64,7 +64,6 @@ Cristian León,34,Masculino,Abogado,Doctorado
 Ana Beltrán,26,Femenino,Biólogo Marino,Licenciatura
 Matías Gutiérrez,37,Masculino,Empresario,Maestría
 Fabiola Espinoza,28,Femenino,Publicista,Licenciatura
-Valeria Castro,22,Femenino,Diseñador,Licenciatura
 Leonardo Soto,41,Masculino,Ingeniero Mecánico,Maestría`;
 
             const rows = csvData.split("\n").slice(1);
@@ -80,7 +79,7 @@ Leonardo Soto,41,Masculino,Ingeniero Mecánico,Maestría`;
             function renderList(filter = "") {
                 namesList.innerHTML = "";
                 const filteredPeople = people.filter(p => p.name.toLowerCase().includes(filter.toLowerCase()));
-                filteredPeople.slice(0, 51).forEach(person => {
+                filteredPeople.slice(0, 50).forEach(person => {
                     const col = document.createElement("div");
                     col.classList.add("col-md-6", "mb-2");
                     col.innerHTML = `<button class="btn btn-primary w-100" data-name="${person.name}">${person.name}</button>`;
